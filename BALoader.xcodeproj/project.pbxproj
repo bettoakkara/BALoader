@@ -14,6 +14,7 @@
 		54C8603225C9C28D00EA76F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C8603025C9C28D00EA76F0 /* Main.storyboard */; };
 		54C8603425C9C29200EA76F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C8603325C9C29200EA76F0 /* Assets.xcassets */; };
 		54C8603725C9C29200EA76F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C8603525C9C29200EA76F0 /* LaunchScreen.storyboard */; };
+		54C8604125C9C68D00EA76F0 /* BALoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8604025C9C68D00EA76F0 /* BALoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		54C8603325C9C29200EA76F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54C8603625C9C29200EA76F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54C8603825C9C29200EA76F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54C8604025C9C68D00EA76F0 /* BALoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BALoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		54C85FF825C9C1C000EA76F0 /* BALoader */ = {
 			isa = PBXGroup;
 			children = (
+				54C8604425C9C93300EA76F0 /* Classes */,
 				54C85FF925C9C1C000EA76F0 /* BALoader.h */,
 				54C85FFA25C9C1C100EA76F0 /* Info.plist */,
 			);
@@ -87,6 +90,14 @@
 				54C8603825C9C29200EA76F0 /* Info.plist */,
 			);
 			path = BALoaderExample;
+			sourceTree = "<group>";
+		};
+		54C8604425C9C93300EA76F0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				54C8604025C9C68D00EA76F0 /* BALoader.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				TargetAttributes = {
 					54C85FF525C9C1C000EA76F0 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					54C8602725C9C28D00EA76F0 = {
 						CreatedOnToolsVersion = 12.3;
@@ -199,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C8604125C9C68D00EA76F0 /* BALoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +372,7 @@
 		54C85FFF25C9C1C100EA76F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L6AQ4NYKT9;
@@ -376,6 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -384,6 +399,7 @@
 		54C8600025C9C1C100EA76F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L6AQ4NYKT9;
