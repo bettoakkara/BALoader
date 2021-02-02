@@ -15,7 +15,33 @@
 		54C8603425C9C29200EA76F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C8603325C9C29200EA76F0 /* Assets.xcassets */; };
 		54C8603725C9C29200EA76F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C8603525C9C29200EA76F0 /* LaunchScreen.storyboard */; };
 		54C8604125C9C68D00EA76F0 /* BALoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8604025C9C68D00EA76F0 /* BALoader.swift */; };
+		54C8604625C9D24900EA76F0 /* BALoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C85FF625C9C1C000EA76F0 /* BALoader.framework */; };
+		54C8604725C9D24900EA76F0 /* BALoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54C85FF625C9C1C000EA76F0 /* BALoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54C8604825C9D24900EA76F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C85FED25C9C1C000EA76F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C85FF525C9C1C000EA76F0;
+			remoteInfo = BALoader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54C8604A25C9D24A00EA76F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54C8604725C9D24900EA76F0 /* BALoader.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		54C85FF625C9C1C000EA76F0 /* BALoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BALoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C8604625C9D24900EA76F0 /* BALoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +83,7 @@
 				54C85FF825C9C1C000EA76F0 /* BALoader */,
 				54C8602925C9C28D00EA76F0 /* BALoaderExample */,
 				54C85FF725C9C1C000EA76F0 /* Products */,
+				54C8604525C9D24900EA76F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +128,13 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		54C8604525C9D24900EA76F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -139,10 +174,12 @@
 				54C8602425C9C28D00EA76F0 /* Sources */,
 				54C8602525C9C28D00EA76F0 /* Frameworks */,
 				54C8602625C9C28D00EA76F0 /* Resources */,
+				54C8604A25C9D24A00EA76F0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				54C8604925C9D24900EA76F0 /* PBXTargetDependency */,
 			);
 			name = BALoaderExample;
 			productName = BALoaderExample;
@@ -226,6 +263,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54C8604925C9D24900EA76F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54C85FF525C9C1C000EA76F0 /* BALoader */;
+			targetProxy = 54C8604825C9D24900EA76F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		54C8603025C9C28D00EA76F0 /* Main.storyboard */ = {

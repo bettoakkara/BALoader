@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import BALoader
+
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        BALoader.show(self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            BALoader.dismiss(self)
+        }
     }
 
 
