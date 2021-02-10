@@ -202,10 +202,10 @@ fileprivate class LoaderContainer: UIView {
 
 open class BALoader  {
 
-    public static func show(_ currentViewController : UIViewController)  {
-        LoaderContainer.incrementLoaderCount(view: currentViewController.view)
+    public static func show(_ currentViewController : UIViewController, color : UIColor = UIColor.blue) {
+        LoaderContainer.incrementLoaderCount(view: currentViewController.view, color : color)
     }
-    public static func show(_ currentView: UIView, color : UIColor = UIColor.blue)  {
+    public static func show(_ currentView: UIView, color : UIColor = UIColor.blue) {
         LoaderContainer.incrementLoaderCount(view: currentView, color : color)
     }
     public static func dismiss(_ currentView: UIView) {
